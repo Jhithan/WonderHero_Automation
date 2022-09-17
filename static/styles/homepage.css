@@ -1,0 +1,14 @@
+.banner-background {
+    position: absolute;
+    width: 100%;
+}
+
+.body-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0px 0px 60px 60px;
+    width: 900px;
+    height: 644px;
+    margin-top: 0px;
+}

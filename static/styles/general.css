@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(20,20,22);
+    color: white;
+    height: 1000px;
+
+    margin: 0;
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(53,57,69); 
+  border-radius: 5px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(49, 51, 60); 
+}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block mid_section %}
+<div class="mid-section">
+    <span class="header-link" style="
+    background-color:rgb(55, 114, 255);
+    transform: skewX(-8deg);
+    ">
+        <a class="nav-link" href="/" style="transform: skewX(8deg);">
+            <span>Home</span>
+        </a>
+    </span>
+    <span class="header-link">
+        <a class="nav-link" href="/grind">
+            <span>Grind</span>
+        </a>
+    </span>
+</div>
+{% endblock %}
+
+{% block body %}
+<img class='banner-background' src="{{ url_for('static', filename='website-images/banner_bg.png') }}" alt='Background Banner for Homepage'>
+<div class='body-content'>hello there</div>
+
+
+{% endblock %}

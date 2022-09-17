@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links to font styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700;800&family=Expletus+Sans:wght@400;500;700&display=swap" rel="stylesheet"> 
+    
+    <!-- Links to css styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/general.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/homepage.css') }}">
+
+    <link rel="icon" type="image/x-icon" href="static/website-icons/favicon.ico">
+
+    <title>WonderHero | Game Automation</title>
+
+</head>
+<body>
+    <header class="header">
+            <div class="left-section">
+                <a href="/"><img src={{ url_for('static', filename='website-icons/wh-logo-vertical.png') }} alt="Wonderhero Logo"></a>
+            </div>
+            <div class="mid-section">
+                {% block mid_section %} {% endblock %}
+            </div>
+            <div class="right-section">
+                <button onclick="location.href='login.html'" type="button" class="login-button"><span>Login</span></button>
+            </div>
+    </header>
+    {% block body %} {% endblock %}
+</body>
+</html>
