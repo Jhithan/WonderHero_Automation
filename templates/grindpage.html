@@ -18,4 +18,17 @@
 </div>
 {% endblock %}
 
-{% block body %} {% endblock %}
+{% block body %}
+<img class='grind-bg-img' src="{{ url_for('static', filename='website-images/grindpage_bg.png') }}" alt='Background for Grindpage'>
+<div class='grindpage-content-container'>
+    <img class='grind-content-container-bg-img' src="{{ url_for('static', filename='website-images/grindpage_content_bg.png') }}" alt='Background for Grindpage Content'>
+    <h1 id='h1-grindpage'>Start Grinding</h1>
+    <ol>
+        <li>Download the Game</li>
+        <li>Enter your Credit Card details</li>
+        <li>Play your account</li>
+        <li>Profit</li>
+    </ol>
+</div>
+
+{% endblock %}

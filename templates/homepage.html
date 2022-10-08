@@ -2,25 +2,38 @@
 
 {% block mid_section %}
 <div class="mid-section">
-    <span class="header-link" style="
-    background-color:rgb(55, 114, 255);
-    transform: skewX(-8deg);
-    ">
-        <a class="nav-link" href="/" style="transform: skewX(8deg);">
-            <span>Home</span>
-        </a>
-    </span>
-    <span class="header-link">
-        <a class="nav-link" href="/grind">
-            <span>Grind</span>
-        </a>
-    </span>
+  <span class="header-link" style="
+  background-color:rgb(55, 114, 255);
+  transform: skewX(-8deg);
+  ">
+    <a class="nav-link" href="/" style="transform: skewX(8deg);">
+      <span>Home</span>
+    </a>
+  </span>
+  <span class="header-link">
+    <a class="nav-link" href="/grind">
+      <span>Grind</span>
+    </a>
+  </span>
 </div>
 {% endblock %}
 
 {% block body %}
-<img class='banner-background' src="{{ url_for('static', filename='website-images/banner_bg.png') }}" alt='Background Banner for Homepage'>
-<div class='body-content'>hello there</div>
+<img class='home-banner-bg' src="{{ url_for('static', filename='website-images/banner_bg.png') }}" alt='Background Banner for Homepage'>
+<img class='sparks' id='sparks1' src="{{ url_for('static', filename='website-images/sparks1.png') }}" alt='Sparks'>
+<img class='sparks' id='sparks2' src="{{ url_for('static', filename='website-images/sparks2.png') }}" alt='Sparks Sparks'>
+<img class='sparks' id='sparks3' src="{{ url_for('static', filename='website-images/sparks3.png') }}" alt='Sparkers'>
+<img class='sparks' id='sparks4' src="{{ url_for('static', filename='website-images/sparks4.png') }}" alt='Sparks Sparking'>
 
+<div class='home-content-container'> 
+  <img class='home-content-container-bg-img' src="{{ url_for('static', filename='website-images/homepage_content_bg.png') }}" alt='Background Banner for Homepage'>
+  <div class='home-content'>
+    <img id='cersei-homepage' src="{{ url_for('static', filename='website-images/cersei_bg.png') }}" alt='Cersei just standing here'>
+    <h1 id='h1-homepage'>AUTOMATE DAILY GAMING TASKS</h1>
+    <h3 id='h3-homepage'>Be done with all the menial hassle.<br>Just click the button below and reap rewards overnight!</h3>
+    <h5 id='h5-homepage'>--------- This is not the official website of WonderHero but a cheap copycat ---------</h3>
+    <a href="/"><img id='get-started-img' src={{ url_for('static', filename='website-images/get-started.png') }} alt='Get Started'></a>
+  </div>
 
+</div>
 {% endblock %}

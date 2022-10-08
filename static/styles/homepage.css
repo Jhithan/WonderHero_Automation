@@ -1,14 +1,122 @@
-.banner-background {
-    position: absolute;
-    width: 100%;
+.home-banner-bg {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
 }
 
-.body-content {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding: 0px 0px 60px 60px;
-    width: 900px;
-    height: 644px;
-    margin-top: 0px;
+.sparks {
+  position: absolute;
+  z-index: 1000;
+  margin-top: 80px;
+}
+
+#sparks1 {
+  width: 67px;
+  height: 107px;
+  top: 230px;
+  left: 30px;
+}
+
+#sparks2 {
+  width: 463px;
+  height: 212px;
+  bottom: -37px;
+}
+
+#sparks3 {
+  width: 359px;
+  height: 202px;
+  right: 314px;
+  bottom: -68px;
+}
+
+#sparks4 {
+  width: 67px;
+  height: 107px;
+  top: 234px;
+  right: 74px;
+}
+
+.home-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  margin: auto;
+  top: 0;
+  width: 900px;
+  height: 644px;
+  z-index: -1;
+}
+
+.home-content-container-bg-img {
+  position: absolute;
+  width: 100%;
+  z-index: 101;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 110px 60px 0px 60px;
+  
+}
+
+#cersei-homepage {
+  position: absolute;
+  width: 235px;
+  height: 297;
+  left: -98px;
+  bottom: 64px;
+  z-index: 101;
+}
+
+#h1-homepage, 
+#h3-homepage, 
+#h5-homepage {
+  position: absolute;
+  z-index: 101;
+  text-align: center;
+}
+
+#h1-homepage {
+  background-image: linear-gradient(rgb(255,244,214) 0%, rgb(249,123,0) 100%);
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  top: 90px;
+
+  font-feature-settings: "tnum" "tnum";
+  
+}
+
+#h3-homepage {
+  width: 624px;
+
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 34px;
+  top: 175px;
+}
+
+#h5-homepage {
+  color: rgba(230, 52, 52, 0.9);
+  font-size: 10px;
+  top: 550px;
+}
+
+#get-started-img {
+  position: relative;
+  height: 75%;
+  top: 235px;
+  z-index: 102;
 }
