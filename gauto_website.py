@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+import WonderHero_Automation
 
 app = Flask(__name__, template_folder='templates')
 
@@ -6,9 +7,13 @@ app = Flask(__name__, template_folder='templates')
 def homepage():
     return render_template('homepage.html')
 
-@app.route('/grind')
+@app.route('/grind', methods=['GET', 'POST'])
 def grindpage():
-    return render_template('grindpage.html')
+    if request.method == 'POST':
+        if request.form.get('grind') == 'Grind':
+            return WonderHero_Automation.get_username()
+    elif request.method == 'GET':
+        return render_template('grindpage.html')
 
 @app.route('/login')
 def login():
